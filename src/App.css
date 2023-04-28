@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+body {
+  background-color: rgb(240, 239, 233);
+  margin: 0 auto;
+}
+
+.add-button {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #50e3a4;
+  color: #519c7d;
+  border: 0;
+  font-size: 50px;
+  position: absolute;
+  cursor: pointer;
+  bottom: -7.8%;
+  left: 37%;
+  transition: 0.3s ease-in-out;
+}
+
+.add-button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.checkbox-input {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+  border: 3px solid lightgrey;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.date-details {
+  font-size: 40px;
+}
+
+.month-year-details {
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.list-item {
+  list-style-type: none;
+  font-size: 20px;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.list-item:hover {
+  scale: 0.99;
+}
+
+.checkbox-input:checked {
+  background-image: url('./images/checked.ico');
+  background-size: cover;
+  border: 0;
+}
+
+.completed-task {
+  color: gray;
+}
+
+.task-list {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.task-list::-webkit-scrollbar {
+  display: none;
+}
+
+.todo-body {
+  height: 600px;
+  width: 100%;
+  max-width: 370px;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 10%) 0px 0px 7.6px 5px;
+  font-family: 'Comfortaa', cursive;
+  position: relative;
+  margin-top: 150px;
+}
+
+/* Media Queries */
+
+@media (max-width: 1400px) {
+  .todo-body {
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 992px) {
+  .todo-body {
+    margin-top: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .add-button {
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    bottom: -6.5%;
+    left: 40%;
+  }
+  .todo-body {
+    margin-top: 140px;
+  }
+}
+
+@media (max-width: 576px) {
+  .todo-body {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 535px) {
+  .todo-body {
+    margin-top: 125px;
+  }
+}
+
+@media (max-width: 376px) {
+  .todo-body {
+    margin-top: 28px;
+  }
+}
+
+@media (max-width: 362px) {
+  .todo-body {
+    max-width: fit-content;
+  }
+  .list-item {
+    font-size: x-small;
+  }
+  .checkbox-input {
+    width: 25px;
+    height: 25px;
+  }
+  .add-button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    bottom: -4.5%;
+  }
+  .date-details {
+    font-size: 30px;
+  }
+
+  .month-year-details {
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  .day-details {
+    font-size: x-small;
+  }
+}
